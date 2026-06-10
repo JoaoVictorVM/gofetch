@@ -4,7 +4,7 @@
 *.dll
 *.so
 *.dylib
-gofetch
+/gofetch
 
 # Test binary and coverage
 *.test
