@@ -4,10 +4,8 @@ package system
 
 import "time"
 
-// SystemInfo aggregates every specification gofetch displays.
-//
-//nolint:revive // system.Info is taken by the Collector contract; SystemInfo is the clearest name for the aggregate.
-type SystemInfo struct {
+// Info aggregates every specification gofetch displays.
+type Info struct {
 	Host   Host
 	CPU    CPU
 	Memory Memory
@@ -60,9 +58,9 @@ type GPU struct {
 	Model string
 }
 
-func (h Host) apply(s *SystemInfo)   { s.Host = h }
-func (c CPU) apply(s *SystemInfo)    { s.CPU = c }
-func (m Memory) apply(s *SystemInfo) { s.Memory = m }
-func (d Disk) apply(s *SystemInfo)   { s.Disk = d }
-func (b Board) apply(s *SystemInfo)  { s.Board = b }
-func (g GPU) apply(s *SystemInfo)    { s.GPU = g }
+func (h Host) apply(info *Info)   { info.Host = h }
+func (c CPU) apply(info *Info)    { info.CPU = c }
+func (m Memory) apply(info *Info) { info.Memory = m }
+func (d Disk) apply(info *Info)   { info.Disk = d }
+func (b Board) apply(info *Info)  { info.Board = b }
+func (g GPU) apply(info *Info)    { info.GPU = g }
