@@ -1,0 +1,31 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+gofetch
+
+# Test binary and coverage
+*.test
+*.out
+coverage.html
+
+# Go workspace files
+go.work
+go.work.sum
+
+# Build output
+/bin/
+/dist/
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+PRD.md
+CLAUDE.md
