@@ -5,6 +5,7 @@ go 1.26.4
 require (
 	github.com/shirou/gopsutil/v4 v4.26.5
 	github.com/yusufpapurcu/wmi v1.2.4
+	golang.org/x/sync v0.21.0
 )
 
 require (
